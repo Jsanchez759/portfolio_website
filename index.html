@@ -1,169 +1,307 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>Jesus Sanchez - Portfolio</title>
-    <link rel="stylesheet" href="./style.css"/>
-    <script src="./script.js"></script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jesús Sanchez | Senior AI Engineer</title>
+    <meta
+      name="description"
+      content="Senior AI Engineer with 5+ years of experience building production-ready ML and GenAI systems across insurance, retail, and energy."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
   </head>
   <body>
-    <!-- Navigation Bar -->
-    <nav>
-      <div id="home">
-        <div class="profile_name">
-          Jesus Eduardo Sanchez Daza
-          <div class="contact_info">
-            <img src="images/envelope.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          jesussanchezd@hotmail.es
-        </div>
-        <div style="clear:both;"></div>
-        <div class="contact_info">
-          <img src="images/phone.png" alt="https://icons8.com/icon/124377/circled-envelope"/>
-          +57 3153742034
-        </div>
-        </div>
-        <div class="topdiv">
-          <a class="topmenu" href="#about-me">About</a>
+    <div class="page-noise" aria-hidden="true"></div>
+
+    <header class="site-header" id="home">
+      <div class="container nav-wrap">
+        <a class="brand" href="#about">
+          <span class="brand-name">Jesús Sanchez, MSc.</span>
+          <span class="brand-role">Senior AI Engineer</span>
+        </a>
+
+        <button class="menu-toggle" aria-label="Open menu" aria-expanded="false">Menu</button>
+
+        <nav class="topdiv" id="top-menu">
+          <a class="topmenu" href="#about">About</a>
+          <a class="topmenu" href="#experience">Experience</a>
           <a class="topmenu" href="#skills">Skills</a>
           <a class="topmenu" href="#projects">Projects</a>
+          <a class="topmenu" href="#credentials">Credentials</a>
           <a class="topmenu" href="#contact">Contact</a>
-        </div>
-      </div>    
-    </nav>
-
-    <!-- About Me -->
-    <section id="about-me" class="container">
-      <div>
-        <img src="images/infraestructura.png" class="profile_image"/>
+        </nav>
       </div>
+    </header>
 
-      <div>
-          <h1>
-            Hi, I'm Jesús Sanchez! <img src="images/waving-hand.png" width="60px"/>
-          </h1>
-          <p>
-            Energy engineer and Magister in artificial intelligence, with +3 years of experience as a data
-            scientist and analyst, focused on solving business problems using data.
-            I have worked on projects in various industries, such as finance, energy, and retail, applying exploratory
-            analysis techniques, preprocessing, and modeling data, evaluation, development, and deployment of ML
-            models, and developing visualization tools to give insights. I have knowledge of the main ML frameworks
-            and programming languages, such as Python and SQL. Also, I have experience with GitHub to manage
-            code versions, Docker for code deployments and cloud computing tools within AWS and Google Cloud Platform
+    <main>
+      <section id="about" class="hero container section">
+        <div class="hero-main">
+          <p class="eyebrow">Available for senior AI roles</p>
+          <h1>Building production AI systems that create measurable business impact.</h1>
+          <p class="lead">
+            AI Engineer with a master's degree and 5+ years of hands-on experience designing, developing, and deploying
+            machine learning and generative AI solutions. Proven track record across insurance, retail, and energy with
+            end-to-end ownership from data pipelines to cloud deployment.
           </p>
-      </div>
-    </section>
-              
-    <!-- Skills -->
-    <section id="skills">
-      <h2>Skills</h2>
-      <div style="clear:both;"></div>
-
-      <div class="all_skills">
-        <div class="skill">
-          <img src="images/Python-logo-notext.svg.png"/>
-          <h6>Python</h6>
-          <p>4 years experience</p>
-        </div>  
-
-        <div class="skill">
-          <img src="images/SQL.png"/>
-          <h6>SQL</h6>
-          <p>3 years experience</p>
-        </div>  
-
-        <div class="skill">
-            <img src="images/AI.png"/>
-            <h6>ML and AI</h6>
-            <p>3 years experience</p>
-        </div> 
-
-        <div class="skill">
-            <img src="images/Tableau-Emblem.png"/>
-            <h6>Tableau</h6>
-            <p>2 years experience</p>
-        </div> 
-
-        <div class="skill">
-            <img src="images/power-bi-software.jpg"/>
-            <h6>Power BI</h6>
-            <p>2 years experience</p>
-        </div> 
-
-        <div class="skill">
-            <img src="images/docker.png"/>
-            <h6>Docker</h6>
-            <p>2 years experience</p>
-        </div> 
-
-        <div class="skill">
-            <img src="images/GitHub_Invertocat_Logo.svg.png"/>
-            <h6>Git - Github</h6>
-            <p>3 years experience</p>
-        </div> 
-
-        <div class="skill">
-            <img src="images/aws-gcp.png"/>
-            <h6>AWS - Google Cloud</h6>
-            <p>2 years experience</p>
-        </div> 
-
-
-      </div>
-    </section>
-          
-    <!-- Projects -->
-    <section class="projects" id="projects">
-      <h2>
-        Projects
-      </h2>
-      <div style="clear:both;"></div>
-
-        <div id="projects-container" class="projects-container">
-          <div class="project-card">
-            <h3>SpaceX Rocket Landing Classification</h3>
-            <ul>
-              <li>This Machine Learning project focuses on predicting whether a SpaceX rocket will successfully land on the ground or not, using data obtained through the SpaceX API. The ability to predict the outcome of a rocket landing is essential for ensuring the safety and success of space missions.
-                  This project was developed in a complete way, from data exploration, development, modeling and testing of different models, to an application to consume the chosen model through FastAPI.
-            </li>
-            </ul>
+          <div class="kpis">
+            <article>
+              <h3>5+ years</h3>
+              <p>AI & Data Science experience</p>
+            </article>
+            <article>
+              <h3>Global Teams</h3>
+              <p>Proven delivery experience for international companies and cross-cultural stakeholders</p>
+            </article>
+            <article>
+              <h3>3 industries</h3>
+              <p>Insurance, Retail, Energy</p>
+            </article>
           </div>
-          <hr>
-          <div class="project-card">
-            <h3>Mama Cancer Analysis and prediction</h3>
-            <ul>
-              <li>This Machine Learning project is focused on classifying and analyzing the propensity of an individual to develop breast cancer based on specific variables and features. The goal is to build a predictive model that can assist in early detection and risk assessment of breast cancer, contributing to improved healthcare outcomes.</li>
-            </ul>
-          </div>
-          <hr>
-          <div class="project-card">
-            <h3>Sunflower Classification with Convolutional Neural Networks</h3>
-            <ul>
-              <li>This Machine Learning project focuses on the detection and classification of diseases in plant leaves using advanced image analysis techniques and Convolutional Neural Networks (CNNs) implemented in TensorFlow. The goal is to develop a system capable of identifying whether a plant leaf is healthy or shows signs of disease, which can be crucial for crop health and agriculture.</li>
-            </ul>
-          </div>
-    </div>
-    </section>
-    <div style="clear:both;"></div>
+        </div>
 
-    <!-- Contact/Footer -->
+        <aside class="hero-aside">
+          <div class="profile-card">
+            <img src="images/Foto.jpg" alt="own photo" class="profile_image" />
+            <ul class="quick-facts">
+              <li><strong>Phone:</strong> <a href="tel:+573153742034">+57 315 374 2034</a></li>
+              <li><strong>Email:</strong> <a href="mailto:jesussanchezd@hotmail.es">jesussanchezd@hotmail.es</a></li>
+              <li><strong>Location:</strong> Colombia (LATAM)</li>
+              <li><strong>Languages:</strong> Spanish (native), English (professional)</li>
+            </ul>
+            <div class="hero-cta">
+              <a href="#contact" class="button">Contact Me</a>
+              <a href="#projects" class="button button-ghost">View Work</a>
+            </div>
+          </div>
+        </aside>
+      </section>
+
+      <section id="experience" class="container section">
+        <div class="section-head">
+          <p class="eyebrow">Career path</p>
+          <h2>Professional Experience</h2>
+        </div>
+
+        <div class="timeline">
+          <article class="timeline-item">
+            <header>
+              <h3>Senior AI Developer · Linqura</h3>
+              <span>Aug 2024 - Present</span>
+            </header>
+            <ul>
+              <li>Designed and deployed a multi-agent classification system for commercial insurance using web scraping, vector databases, FastAPI, and LangChain orchestration.</li>
+              <li>Led development of RAG-based document intelligence for policy analysis and claims automation workflows.</li>
+              <li>Managed LLM serving on AWS using vLLM with OpenAI-compatible endpoints for scalable production inference.</li>
+              <li>Led SLM fine-tuning with Unsloth for NAICS keyword generation, improving classification quality by approximately 25-30%.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <header>
+              <h3>Data Scientist · The Home Depot Canada</h3>
+              <span>Apr 2023 - Aug 2024</span>
+            </header>
+            <ul>
+              <li>Fine-tuned and deployed BERT-based classifiers for reviews and service feedback, reducing manual labeling effort.</li>
+              <li>Built end-to-end NLP pipelines in Python and BigQuery for support chats and customer reviews.</li>
+              <li>Implemented sentiment analysis, topic modeling, and intent classification for decision-ready dashboards.</li>
+              <li>Developed ETL pipelines and custom scripts for ingestion, cleaning, transformation, and analytics automation.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <header>
+              <h3>Data Scientist · DevSavant</h3>
+              <span>Jul 2022 - Mar 2023</span>
+            </header>
+            <ul>
+              <li>Built interactive BI dashboards in Power BI and Tableau for real-time business visibility.</li>
+              <li>Created Python automation workflows for extraction, processing, and reporting at scale.</li>
+              <li>Integrated cloud workflows and AI models with third-party APIs for clients in logistics, healthcare compliance, and AI communications.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <header>
+              <h3>AI Developer · Neu Energy</h3>
+              <span>Oct 2021 - Jun 2022</span>
+            </header>
+            <ul>
+              <li>Developed ML models for energy disaggregation and forecasting to optimize clean-energy trading strategies.</li>
+              <li>Built backend APIs in FastAPI for high-volume energy data processing.</li>
+              <li>Worked with PostgreSQL, AWS Athena/S3, and Docker for model and service deployment.</li>
+            </ul>
+          </article>
+
+          <article class="timeline-item">
+            <header>
+              <h3>Junior Data Scientist · Allianz Energy</h3>
+              <span>Feb 2021 - Sep 2021</span>
+            </header>
+            <ul>
+              <li>Built Python automation tools to reduce manual reporting and improve data quality.</li>
+              <li>Developed simulation models for solar resource performance and investment planning.</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+
+      <section id="skills" class="container section">
+        <div class="section-head">
+          <p class="eyebrow">Technology stack</p>
+          <h2>Core Skills</h2>
+        </div>
+
+        <div class="skills-groups">
+          <article class="skill-group">
+            <h3>Machine Learning & GenAI</h3>
+            <p>TensorFlow, PyTorch, Scikit-learn, XGBoost, LightGBM, Hugging Face, LangChain, LlamaIndex, BERT, RAG, GPT fine-tuning</p>
+          </article>
+          <article class="skill-group">
+            <h3>MLOps & Deployment</h3>
+            <p>vLLM, Ollama, FastAPI, Flask, gRPC, Pinecone, Weaviate, FAISS, ChromaDB, AWS SageMaker, GCP Vertex AI, Kubernetes, Docker</p>
+          </article>
+          <article class="skill-group">
+            <h3>Data & Engineering</h3>
+            <p>Python, SQL, Bash, BigQuery, PostgreSQL, ETL pipelines, API integrations, GitHub Actions, Tableau, Power BI</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="projects" class="container section">
+        <div class="section-head">
+          <p class="eyebrow">Representative work</p>
+          <h2>Featured Projects</h2>
+        </div>
+
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>Multi-Agent Insurance Classification</h3>
+            <p>Production-grade agentic workflow for commercial insurance classification with web data ingestion, vector retrieval, and reasoning orchestration.</p>
+            <ul>
+              <li>LangChain orchestration + FastAPI backend</li>
+              <li>Vector DB for retrieval and contextual ranking</li>
+              <li>Cloud deployment and secure scalable inference</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>RAG for Policy & Claims Intelligence</h3>
+            <p>AI assistants for policy understanding and claims support to reduce review time and improve consistency of internal analysis.</p>
+            <ul>
+              <li>Document chunking and semantic retrieval</li>
+              <li>Task-specific agent workflows</li>
+              <li>Operational automation for business teams</li>
+            </ul>
+          </article>
+          <article class="project-card">
+            <h3>NLP Analytics at Retail Scale</h3>
+            <p>Enterprise NLP pipelines for classifying customer feedback and support conversations, connected to BI decision systems.</p>
+            <ul>
+              <li>BERT fine-tuning and inference pipelines</li>
+              <li>BigQuery + Python ETL architecture</li>
+              <li>Sentiment, topic and intent analytics</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="portfolio-summary">
+          <div class="section-head">
+            <p class="eyebrow">GitHub portfolio</p>
+            <h2>Project Portfolio Highlights</h2>
+          </div>
+
+          <div class="highlights-grid">
+            <article class="highlight-card">
+              <h3>Talk With Your PDF</h3>
+              <p>Document QA system with LangChain and transformer models, delivered with interactive Streamlit and Gradio apps.</p>
+              <a href="https://github.com/Jsanchez759/Data-Related-Projects/tree/main/Machine_Learning/generative_AI/chat_with_PDF" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="highlight-card">
+              <h3>Energy Price Forecasting (Master Project)</h3>
+              <p>Comparative deep learning study (LSTM, CNN, Transformers) for Colombian energy price forecasting across time windows.</p>
+              <a href="https://github.com/Jsanchez759/Data-Related-Projects/tree/main/master_degree_project/project" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+
+            <article class="highlight-card">
+              <h3>Multi-Modal AI Assistant Tools</h3>
+              <p>Unified assistant platform for YouTube, audio, and text workflows with summarization, Q&A, and multimodal analysis features.</p>
+              <a href="https://github.com/Jsanchez759/Data-Related-Projects/tree/main/assistants_tools_project" target="_blank" rel="noopener noreferrer">View Project</a>
+            </article>
+          </div>
+
+          <p class="portfolio-note">
+            This is a curated selection. You can explore my full project portfolio, including additional ML, NLP,
+            analytics, and deployment work, in my GitHub repository:
+            <a href="https://github.com/Jsanchez759/Data-Related-Projects" target="_blank" rel="noopener noreferrer">Data-Related-Projects</a>.
+          </p>
+        </div>
+      </section>
+
+      <section id="credentials" class="container section">
+        <div class="section-head">
+          <p class="eyebrow">Academic profile</p>
+          <h2>Education, Certifications & Publications</h2>
+        </div>
+
+        <div class="credentials-grid">
+          <article class="credential-card">
+            <h3>Education</h3>
+            <ul>
+              <li><strong>MSc in Artificial Intelligence</strong> · Universidad Internacional de La Rioja (Jun 2022 - Jan 2024)</li>
+              <li><strong>BSc in Energy Engineering</strong> · Universidad Autónoma de Bucaramanga (Jun 2017 - Jul 2021)</li>
+            </ul>
+          </article>
+
+          <article class="credential-card">
+            <h3>Professional Certifications</h3>
+            <ul>
+              <li>IBM Data Science Professional (Aug 2021 - Mar 2022)</li>
+              <li>IBM AI Developer Professional (Nov 2023 - May 2024)</li>
+              <li>IBM RAG and Agentic AI Professional (Apr 2025 - Aug 2025)</li>
+            </ul>
+          </article>
+
+          <article class="credential-card">
+            <h3>Selected Publications</h3>
+            <ul>
+              <li>An artificial intelligence model for estimating and analysing the labour impact of FNCERs (UPME, Jan 2025)</li>
+              <li>Energy cost modeling in Colombia: A comparative approach to AI-based solutions (UNIR, Sep 2023)</li>
+              <li>Optimization of residual heat from internal combustion engines through ORC (Colombian research network, Jun 2021)</li>
+            </ul>
+          </article>
+        </div>
+      </section>
+    </main>
+
     <section id="contact" class="contact-section">
-      <div class="contact-container">
-        <h2>Let's Connect</h2>
-        <div class="contact-links">
-          <a href="mailto:jesussanchezd@hotmail.es" class="contact-link">
-            <span>Email</span>
-          </a>
-          <a href="#" class="contact-link">
-            <span>LinkedIn</span>
-          </a>
-          <a href="#" class="contact-link">
-            <span>GitHub</span>
-          </a>
+      <div class="container contact-shell">
+        <div>
+          <p class="eyebrow">Recruiter contact</p>
+          <h2>Let's talk about your AI roadmap</h2>
+          <p>
+            I am open to senior AI engineering opportunities where production ML, LLM systems, and business impact are top priorities.
+          </p>
+        </div>
+
+        <div class="contact-actions">
+          <a href="mailto:jesussanchezd@hotmail.es" class="button">Email</a>
+          <a href="tel:+573153742034" class="button button-ghost">Call</a>
+          <a href="https://www.linkedin.com/in/jesus-sanchez759/" class="button button-ghost" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          <a href="https://github.com/Jsanchez759/Data-Related-Projects" class="button button-ghost" target="_blank" rel="noopener noreferrer">GitHub</a>
         </div>
       </div>
     </section>
 
     <footer class="footer">
-      <p>&copy; 2024 Jesus Sanchez. AI Engineer & Data Scientist.</p>
+      <p>&copy; 2026 Jesús Sanchez. Senior AI Engineer.</p>
     </footer>
   </body>
 </html>

@@ -1,27 +1,37 @@
-function addRecommendation() {
-  // Get the message of the new recommendation
-  let recommendation = document.getElementById("new_recommendation");
-  // If the user has left a recommendation, display a pop-up
-  if (recommendation.value != null && recommendation.value.trim() != "") {
-    console.log("New recommendation added");
-    //Call showPopup here
-    showPopup(true);
-    // Create a new 'recommendation' element and set it's value to the user's message
-    var element = document.createElement("div");
-    element.setAttribute("class","recommendation");
-    element.innerHTML = "\<span\>&#8220;\</span\>" + recommendation.value + "\<span\>&#8221;\</span\>";
-    // Add this element to the end of the list of recommendations
-    document.getElementById("all_recommendations").appendChild(element); 
-    
-    // Reset the value of the textarea
-    recommendation.value = "";
-  }
+const menuToggle = document.querySelector('.menu-toggle');
+const topMenu = document.getElementById('top-menu');
+const navLinks = document.querySelectorAll('.topmenu');
+const observedSections = document.querySelectorAll('section[id]');
+
+if (menuToggle && topMenu) {
+  menuToggle.addEventListener('click', () => {
+    const isOpen = topMenu.classList.toggle('open');
+    menuToggle.setAttribute('aria-expanded', String(isOpen));
+  });
+
+  navLinks.forEach((link) => {
+    link.addEventListener('click', () => {
+      topMenu.classList.remove('open');
+      menuToggle.setAttribute('aria-expanded', 'false');
+    });
+  });
 }
 
-function showPopup(bool) {
-  if (bool) {
-    document.getElementById('popup').style.visibility = 'visible'
-  } else {
-    document.getElementById('popup').style.visibility = 'hidden'
-  }
+if ('IntersectionObserver' in window) {
+  const navObserver = new IntersectionObserver(
+    (entries) => {
+      entries.forEach((entry) => {
+        if (!entry.isIntersecting) return;
+
+        const sectionId = entry.target.getAttribute('id');
+        navLinks.forEach((link) => {
+          const active = link.getAttribute('href') === `#${sectionId}`;
+          link.classList.toggle('active', active);
+        });
+      });
+    },
+    { threshold: 0.35 }
+  );
+
+  observedSections.forEach((section) => navObserver.observe(section));
 }
