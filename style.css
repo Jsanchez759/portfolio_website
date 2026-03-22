@@ -368,6 +368,12 @@ body {
   margin-bottom: 0.7rem;
 }
 
+.highlight-card ul {
+  margin-left: 1.1rem;
+  color: var(--muted);
+  margin-bottom: 0.8rem;
+}
+
 .highlight-card a {
   color: var(--accent);
   font-weight: 700;
@@ -376,6 +382,12 @@ body {
 
 .highlight-card a:hover {
   text-decoration: underline;
+}
+
+.highlight-actions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .portfolio-note {
