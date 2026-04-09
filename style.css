@@ -357,10 +357,29 @@ body {
   padding: 1rem;
 }
 
+.highlight-card.live-project {
+  order: -1;
+  border-color: rgba(49, 240, 191, 0.56);
+  box-shadow: 0 14px 36px rgba(5, 26, 32, 0.5);
+  background: linear-gradient(180deg, rgba(16, 46, 58, 0.5), rgba(10, 26, 38, 0.88));
+}
+
 .highlight-card h3 {
   font-family: "Sora", sans-serif;
   font-size: 1rem;
   margin-bottom: 0.4rem;
+}
+
+.live-badge {
+  display: inline-block;
+  margin-bottom: 0.6rem;
+  padding: 0.2rem 0.55rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #07241d;
+  background: linear-gradient(120deg, #3df0ba, #7dffd8);
 }
 
 .highlight-card p {
